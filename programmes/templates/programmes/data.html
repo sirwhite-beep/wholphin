@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+{% include 'navbar.html' %}
+
+{% block content %}
+
+<div style=" margin-left:10pt; margin-right:10pt">
+    <div class="text-center"> <h2 style="color:green; margin-top:20pt">Data Science</h2>
+    </div>
+
+   <p><h5> Data science is an inter-disciplinary field that uses scientific methods, processes, algorithms and systems to extract knowledge and insights from many structural and unstructured data. Data science is related to data mining, machine learning and big data.
+</h5></p><br>
+
+     <P><h5>Data science is a "concept to unify statistics, data analysis and their related methods" in order to "understand and analyze actual phenomena" with data. It uses techniques and theories drawn from many fields within the context of mathematics, statistics, computer science, domain knowledge and information science. Turing award winner Jim Gray imagined data science as a "fourth paradigm" of science (empirical, theoretical, computational and now data-driven) and asserted that "everything about science is changing because of the impact of information technology" and the data deluge.
+</h5></P><br>
+
+
+</div>
+<a href="{% url 'main' %}" class="btn btn-success" style="display:flex; justify-content:flex-end">close</a>
+{% endblock %}
+</body>
+</html>

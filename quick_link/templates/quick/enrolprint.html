@@ -1,0 +1,186 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+{% include 'navbar.html' %}
+
+
+<div class="jumbotron">
+
+      <div class="container" style="background-color:#ccc; height:130pt; margin-top:-48pt">
+          <img src="{% static 'img/logo plus.png' %}" style="width:110pt; margin-top:10pt; margin-left:30pt">
+
+  <div class="col-xs-12 text-center" style="margin-top:-100pt; margin-left:-55pt"><h1 style="color:#28a745ab">WHOLPHINPLUS CORPERATION</h1>
+          <div><H5 style="color:#e83e8c; margin-top:-5pt" >The Future is Now</H5>
+              <h6> Contact: +2348066078147, +2348182853816</h6>
+              <h6><i> Email: wholphinplus@gmail.com</i></h6>
+          </div>
+
+
+              </div>
+      </div>
+
+     <div style="margin-left:50pt">
+    <div class="container" style="width:300pt; margin-top:10pt">
+        <center>
+    <h1 style="background-color:black; color:white">ADMISSION FORM</h1>
+    </center>
+    </div>
+    <h5 class="text-center">Please write your name in full and in capital letters starting with surname</h5><br>
+
+    <div class="col" style="background-color:black">
+        <h4 class="text-center" style="color: white">PERSONAL DATA</h4>
+        </div><br>
+
+        <div class="col-xs-12">
+           <h5> Name <input type="text" maxlength="50" minlength="10"></h5>
+            <p></p><h5>Parents/Guardian's Name <input type="text" maxlength="50" minlength="10"></h5>
+             <p></p><h5>Parents/Guardian's Contact No. <input type="number" maxlength="11" minlength="11">
+           &emsp; Applicant Contact No. <input type="number" maxlength="11" minlength="11"></h5>
+             <p></p><h5>Contact Address <input type="text" maxlength="50"></h5>
+             <p></p><h5>State of Origin <input type="text" maxlength="50">
+       &emsp; LGA <input type="text" maxlength="50">
+           &emsp; Gender: &emsp;<input type="checkbox">m &ensp;<input type="radio">f
+        </h5>
+            <p></p><h5>Email <input type="email"> &emsp; Date of Birth <input type="date"></h5><BR>
+    </div>
+
+
+     <div class="col" style="background-color:black">
+        <h4 class="text-center" style="color: white">FOR UNDERGRADUATES ONLY</h4>
+        </div><br>
+
+        <div class="col-xs-12">
+              <h5> Name of Institution <input type="text" maxlength="50"></h5>
+            <h5> Department  <input type="text">
+            Level: <input type="checkbox">100L <input type="checkbox">200L <input type="checkbox">300L <input type="checkbox">400L <input type="checkbox">500L
+            </h5>
+            <p></p><h5>Reasons for Application:&ensp; <input type="checkbox">Educational use
+            &ensp;<input type="checkbox">Personal use &ensp;<input type="checkbox">Professional use
+        </h5>
+            <p></p><h5>Semester:&ensp; <input type="checkbox">First &ensp;<input type="checkbox">Second
+        </h5><br>
+        </div>
+
+
+     <div class="col" style="background-color:black">
+        <h4 class="text-center" style="color: white">COURSES OFFERED</h4>
+        </div><br>
+
+        <div class="col-xs-12">
+              <h5><input type="checkbox">1.  Microsoft Office <input type="checkbox" style="margin-left:20pt">2. Graphics Design
+                  <input type="checkbox" style="margin-left:20pt">3. Programming
+              </h5>
+            <h5><input type="checkbox" style="margin-left:30pt">  Ms-word <input type="checkbox" style="margin-left:80pt"> Corel-Draw
+                  <input type="checkbox" style="margin-left:62pt"> Basic
+              </h5>
+             <h5><input type="checkbox" style="margin-left:30pt">  Ms-excel <input type="checkbox" style="margin-left:82pt"> Photoshop
+                  <input type="checkbox" style="margin-left:65pt"> Visual-studio
+              </h5>
+             <h5><input type="checkbox" style="margin-left:30pt">  Ms-powerpoint
+                  <input type="checkbox" style="margin-left:195pt"> Python
+              </h5><br>
+        </div>
+    <div class="col" style="background-color:black">
+        <h4 class="text-center" style="color: white">COURSES DURATION</h4>
+        </div><br>
+     <div class="col-xs-12">
+
+<h5><input type="checkbox">  1 month intensive training on web design <input type="checkbox" style="margin-left: 100pt"> 4 months AI training
+</h5>
+    <p></p><h5><input type="checkbox">  2 month graphics design training <input type="checkbox" style="margin-left: 155pt"> 3 months genetic programming
+</h5>
+    <p></p><h5><input type="checkbox">  1<sup>1/2</sup> month of basic programming <input type="checkbox" style="margin-left: 155pt"> 3 months gweb development/hosting
+</h5>
+    <p></p><h5><input type="checkbox">  2 months app development <input type="checkbox" style="margin-left: 195pt"> machine learning (3 months)
+</h5>
+    <p></p><h5><input type="checkbox">  4 months professional graphi designing <input type="checkbox" style="margin-left: 115pt"> 6 months advance AI training
+</h5>
+    <p></p><h5><input type="checkbox">  2<sup>1/2</sup> months of MS office training <input type="checkbox" style="margin-left: 162pt"> 2 months python basics
+</h5>
+    <p></p><h5><input type="checkbox">  2 months visual studio basics
+</h5><br>
+
+
+
+</div>
+
+<div class="col" style="background-color:black">
+        <h4 class="text-center" style="color: white">FOR ALL APPLICANT</h4>
+        </div><br>
+    <div class="col-xs-12">
+
+<h5> 1.&ensp; Any previous knowledge on computer? &emsp;<input type="checkbox"> No &emsp;<input type="checkbox"> Yes (please specify)
+</h5>
+        <h5> &emsp; <input type="checkbox"> Ms-office &ensp;<input type="checkbox"> Graphic design &ensp;<input type="checkbox"> Programming
+    &ensp;<input type="checkbox"> others
+</h5><br>
+        <h5> 2.&ensp;How many months of experience?</h5>
+        <h5>
+           &emsp; <input type="checkbox"> 1 month &emsp; <input type="checkbox"> 2-3 months &emsp; <input type="checkbox"> 1-2 weeks
+        </h5><br>
+        <h5>
+            3.&ensp;Where did you obtain the training?
+        </h5>
+        <h5> &emsp; <input type="text"></h5><br>
+
+          <h5>
+            3.&ensp;Years of training <input type="text">
+        </h5><br>
+
+</div>
+    <div class="col" style="background-color:black">
+        <h4 class="text-center" style="color: white">RULES AND REGULATIONS</h4>
+        </div><br>
+    <div class="col-xs-12">
+    <h5>1. &ensp;WHOLPHINPLUS reserves the right of admission and right to change the days and tim of the class.</h5>
+   <p></p><h5> 2. &ensp;An admission to the course is not transferable to any other individual.</h5>
+   <p></p><h5> 3. &ensp;An admission to a specific course cannot be converted into an admission for any other courses except through course upgrade.</h5>
+   <p></p><h5> 4. &ensp;Courses fee once paid will not be refundable under any circumstances.</h5>
+
+        <p></p> <h5><i style="color:green"> &ensp;<input type="checkbox" > I have read and agree to the terms and conditions</i></h5><BR>
+
+        <div class="col" style="background-color:black">
+        <h4 class="text-center" style="color: white">DECLARATION</h4>
+        </div><br>
+    <div class="col-xs-12">
+       <h5> I hereby declare that all above above information is true to the best of my knowledge and i have read the rules and regulation thoroughly.
+        </h5><br><br><br>
+        <h5>
+           <p></p> ............................................................. </h5>
+
+            <h5><i style="margin-left:30pt">Applicant's signature</i></h5>
+            <h5 style="margin-top:-48pt; margin-left:300pt">
+
+            ...........................</h5>
+
+        <h5><i style="margin-left:330pt">Date</i></h5><br>
+
+</div>
+    </div>
+
+<div class="col" style="background-color:black">
+        <h4 class="text-center" style="color: white">FOR OFFICE USE ONLY</h4>
+        </div><br>
+    <div class="col-xs-12">
+
+        <h5> Date of admission <input type="text"> &emsp;Course <input type="text"></h5><br>
+
+        <h5> Group No. <input type="text"> &emsp;Paid fees <input type="text"></h5><br>
+
+        <h5> Completion Date <input type="text"> &emsp;Date of commencement <input type="text"></h5><br>
+
+        <h5> Classes' days <input type="text"> &emsp;Classes' hours <input type="text"></h5><br>
+    </div><br>
+
+</div>
+
+
+</div>
+</body>
+</html>

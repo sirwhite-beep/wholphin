@@ -1,0 +1,31 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>comments view</title>
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+</head>
+<body>
+
+{% include 'navbar.html' %}
+
+
+
+<div class="navbar navbar-expand" style="display:flex; justify-content:center">
+    <div class="jumbotron">
+    <h1><i>Here is a preview of all comments</i></h1><br>
+
+
+
+    {% for com in comm %}
+       <div style="display: flex; justify-content:center">
+           <h5>Name: {{com.name}}&emsp;&emsp;
+         Comment: {{com.comment}}</h5>
+       </div><br>
+
+        {% endfor %}
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,25 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>comment</title>
+</head>
+<body>
+{% include 'navbar.html' %}
+{% block content %}
+
+<div class="container"  style="margin-top:20px; justify-content:center;display:flex">
+   <div class="jumbotron" style="width:700px">
+<h3><i> Your complaint has been submitted successfully, you will be contacted if need be</i></h3><br>
+
+ <a href="{% url 'quick:complaint' %}" class="btn btn-success" style="display:flex; justify-content:flex-start">Back</a>
+
+   </div>
+</div>
+
+
+
+{% endblock %}
+</body>
+</html>

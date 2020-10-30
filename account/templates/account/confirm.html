@@ -1,0 +1,26 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>comment</title>
+</head>
+<body>
+{% include 'navbar.html' %}
+{% block content %}
+
+<div class="container"  style="margin-top:20px; justify-content:center;display:flex">
+   <div class="jumbotron" style="width:700px">
+       <center>
+<h3><i >SUBMITTED!!!</i></h3><br>
+</center>
+ <a href="{% url 'main' %}" class="btn btn-success" style="display:flex; justify-content:flex-start">Back</a>
+
+   </div>
+</div>
+
+
+
+{% endblock %}
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{{detail.name}}<br>
+
+{% for roll in detail.enroldetail_set.all %}
+{{roll.parent_guardian_contact_name}}<br>
+{{detail.parent_guardian_contact_name}}<br>
+{{roll.parent_guardian_contact_no}}<br>
+{{roll.applicant_contact_no}}<br>{{roll.contact_address }}<br>{{roll.state_of_origin}}<br>{{roll.lga}}<br>
+{{roll.gender}}<br>{{roll.email}}<br>{{roll.date_of_birth}}<br>{{roll.name_of_institution}}<br>{{roll.department}}<br>{{roll.level}}<br>
+
+{% endfor %}
+<form>
+    <input type="button" value="print" onclick="window.print()">
+</form>
+</body>
+</html>

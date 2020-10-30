@@ -1,0 +1,49 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <title>nav</title>
+
+    <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+
+
+
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar" style="margin-top:-10pt; height:60pt">
+	    <div class="container">
+	      <a class="navbar-brand" href="{% url 'main' %}">wholphinplus</a>
+	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
+
+	      <div class="collapse navbar-collapse" id="ftco-nav" >
+	        <ul class="navbar-nav ml-auto" style="background-color:#343a40" >
+                 <li class="nav-item active"><a href="{% url 'main' %}" class="nav-link">Home</a></li>
+	          <li class="nav-item active"><a href="about.html" class="nav-link">Create Account</a></li>
+                <li class="nav-item active"><a href="about.html" class="nav-link">Student Portal</a></li>
+                <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle active" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" ></a>
+              <div class="dropdown-menu" aria-labelledby="dropdown04" style="background-color:#bbb1b1">
+              	<a class="dropdown-item" href="{% url 'met:about' %}" style=" color:black">About</a>
+              	<a class="dropdown-item" href="{% url 'met:con' %}" style=" color:black">Contact</a>
+                <a class="dropdown-item" href="product-single.html" style=" color:black">View Comments</a>
+              </div>
+            </li>
+	        </ul>
+	      </div>
+	    </div>
+	  </nav>
+
+
+
+
+
+<script src="{% static 'js/jquery.min.js' %}"></script>
+  <script src="{% static 'js/bootstrap.min.js' %}"></script>
+
+
+</body>
+</html>

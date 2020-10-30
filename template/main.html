@@ -1,0 +1,300 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>wholphinplus Co.</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+
+      <link rel="stylesheet" href="{% static 'icon-font/css/all.min.css' %}">
+
+  </head>
+  <body>
+
+
+   <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar" style="margin-top:-10pt; height:60pt">
+	    <div class="container">
+	      <a class="navbar-brand" href="">wholphinplus</a>
+	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
+
+	      <div class="collapse navbar-collapse" id="ftco-nav" >
+	        <ul class="navbar-nav ml-auto" style="background-color:#343a40" >
+                 <li class="nav-item active"><a href="{% url 'main' %}" class="nav-link">Home</a></li>
+	          <li class="nav-item active"><a href="{% url 'sign:signup' %}" class="nav-link">Create Account</a></li>
+                <li class="nav-item active"><a href="http://anietiewholphportal.herokuapp.com" class="nav-link">Student Portal</a></li>
+                <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle active" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" ></a>
+              <div class="dropdown-menu" aria-labelledby="dropdown04" style="background-color:#bbb1b1">
+              	<a class="dropdown-item" href="{% url 'met:about' %}" style=" color:black">About</a>
+              	<a class="dropdown-item" href="{% url 'met:con' %}" style=" color:black">Contact</a>
+                <a class="dropdown-item" href="{% url 'met:commview' %}" style=" color:black">View Comments</a>
+              </div>
+            </li>
+	        </ul>
+	      </div>
+	    </div>
+	  </nav>
+
+
+   <div style="color:red"> <marquee><h4 style="margin-top:10pt">UPCOMING EVENT: Wholphinplus 1st graduating students defense on 30th</h4>
+       </marquee>
+       </div>
+
+
+<div class="jumbotron" style="height:130pt">
+      <div class="container" style="background-color:#ccc; height:130pt; margin-top:-48pt">
+          <img src="{% static 'img/logo plus.png' %}" style="width:110pt; margin-top:10pt; margin-left:100pt">
+
+          <div class="col-xs-9 text-center" style="margin-top:-100pt; margin-left:60pt"><h1 style="color:#28a745ab">WHOLPHINPLUS CORPERATION</h1>
+          <div><H3 style="color:#e83e8c">THE FUTURE IS NOW</H3>
+          </div>
+              </div>
+          </div>
+          </div>
+
+
+
+   <div style="background-color:#efefef; margin-top:-32px; height:150pt"><br>
+		<div class="container">
+			<p><center><h3 class="agileits-title" style="font-size:40px">Welcome </h3></center>
+
+                            <h4 >This is Wholphinplus Corperation, a computer software where a million dream turned a reality.
+                            Professional attributes in Wholphinplus includes collaborative leadership, skilled operational management,
+                                engagement with diverse groups and implementation of problem solution.</h4>
+							</div>
+							</div>
+
+
+
+
+
+<div style="background-color:#efefef"><br>
+     <center>
+    <p><h3 class="agileits-title" style="font-size:40px">Graduating Students</h3><br>
+     </center>
+    <div class="container" style="margin-top:-20pt; background-color:#bbb1b1; height:180pt">
+<div style="display:flex; justify-content:center">
+<div>
+
+        <img src="{% static 'img/emma.jpg' %}"  style="width:100pt; height:100pt; margin-right:30pt">
+    <div style="margin-left:-35pt">
+   <center><h6>Emmanuel Akanebong</h6>
+       <a href="{% url 'student:emma' %}" class="btn btn-success">View Profile</a></center>
+    </div>
+</div>
+<div>
+        <img src="{% static 'img/christy.jpg' %}" style="width:100pt; height:100pt; margin-right:30pt">
+         <div style="margin-left:10pt">
+         <h6>Christy Edet</h6>
+   <a href="{% url 'student:christy' %}" class="btn btn-success">View Profile</a>   </div>
+</div>
+<div>
+            <img src="{% static 'img/20200920_085334.jpg' %}" style="width:100pt; height:100pt; margin-right:30pt">
+<div style="margin-left:10pt">
+         <h6>Anietie Robert</h6>
+    <a href="{% url 'student:rob' %}" class="btn btn-success">View Profile</a>
+           </div>
+</div>
+    <div>
+        <img src="{% static 'img/imo.jpg' %}" style="width:100pt; height:100pt; margin-right:30pt">
+        <div style="margin-left:10pt">
+         <h6>Imoh Inangha</h6>
+   <a href="{% url 'student:imoh' %}" class="btn btn-success">View Profile</a>
+        </div>
+    </div>
+</div>
+    </div>
+</div>
+
+
+
+   <h2 class="text-center" style="margin-top:40pt"> Our Programmes</h2><br>
+ <div class="navbar navbar-expand" style="background-color:#28a745ab">
+
+   <div style="margin-right:5pt">
+       <div class="container" style="background-color:#ccc; width:160pt; height:100pt">
+            <img src="{% static 'img/images.jpeg' %}" style="width:50pt; margin-top:8pt; height:85pt">
+           <h5 style="margin-top:-70pt; margin-left:52pt" class="text-center">Web Development</h5>
+       </div>
+ <p><center><a href="{% url 'programme:web' %}" class="btn  btn-primary" style="background-color:white; color:black; margin-top:-7pt"> View Details</a> </center>
+</div>
+     <div style=" margin-right:5pt">
+       <div class="container" style="background-color:#ccc; width:160pt; height:100pt">
+           <img src="{% static 'img/images (1).jpeg' %}" style="width:50pt; margin-top:8pt; height:85pt">
+           <h5 style="margin-top:-63pt; margin-left:52pt" class="text-center">App Development</h5>
+       </div>
+
+   <p><center><a href="{% url 'programme:app' %}" class="btn  btn-primary" style="background-color:white; color:black; margin-top:-7pt"> View Details</a> </center>
+ </div>
+
+<div style=" margin-right:5pt">
+       <div class="container" style="background-color:#ccc; width:140pt; height:100pt">
+           <img src="{% static 'img/ma learn.png' %}" style="width:50pt; margin-top:8pt; height:85pt">
+           <h5 style="margin-top:-63pt; margin-left:52pt" class="text-center">Machine Learning</h5>
+       </div>
+   <p><center><a href="{% url 'programme:ma' %}" class="btn  btn-primary" style="background-color:white; color:black; margin-top:-7pt"> View Details</a> </center>
+</div>
+
+   <div style="margin-right:5pt">
+       <div class="container" style="background-color:#ccc; width:140pt; height:100pt">
+           <img src="{% static 'img/data science.jpg' %}" style="width:60pt; margin-top:8pt; height:85pt">
+           <h5 style="margin-top:-60pt; margin-left:70pt">Data Science</h5>
+       </div>
+   <p><center><a href="{% url 'programme:data' %}" class="btn  btn-primary" style="background-color:white; color:black; margin-top:-7pt"> View Details</a> </center>
+ </div>
+     <div style="margin-right:5pt">
+       <div class="container" style="background-color:#ccc; width:165pt; height:100pt">
+           <img src="{% static 'img/generic.png' %}" style="width:50pt; margin-top:8pt; height:85pt">
+           <h5 style="margin-top:-65pt; margin-left:55pt" class="text-center">Generic Programming</h5>
+       </div>
+   <p><center><a href="{% url 'programme:gen' %}" class="btn  btn-primary" style="background-color:white; color:black; margin-top:-7pt"> View Details</a> </center>
+ </div>
+     <div style=" margin-right:5pt">
+       <div class="container" style="background-color:#ccc; width:130pt; height:100pt">
+           <img src="{% static 'img/graphic.jpeg' %}" style="width:50pt; margin-top:8pt; height:85pt">
+           <h5 style="margin-top:-65pt; margin-left:50pt" class="text-center">Graphic Design</h5>
+       </div>
+   <p><center><a href="{% url 'programme:gra' %}" class="btn  btn-primary" style="background-color:white; color:black; margin-top:-7pt"> View Details</a> </center>
+</div>
+     <div style=" margin-right:5pt">
+       <div class="container" style="background-color:#ccc; width:160pt; height:100pt">
+           <img src="{% static 'img/software.png' %}" style="width:50pt; margin-top:8pt; height:85pt">
+           <h5 style="margin-top:-65pt; margin-left:50pt" class="text-center">Software Development</h5>
+       </div>
+   <p><center><a href="{% url 'programme:soft' %}" class="btn  btn-primary" style="background-color:white; color:black; margin-top:-7pt"> View Details</a> </center>
+</div>
+</div>
+
+
+
+   <div class="jumbotron" style="margin-top:opt; height:400pt">
+       <center><h1 style="margin-top: -20pt">News/Events</h1></center><br>
+
+<div class="container" style="background-color:#ccc;  width:300pt; height:130pt; margin-left:10pt">
+
+<div>
+   <h4 style="color:green;">Wholphinplus Web Developme...</h4>
+
+            <img src="{% static 'img/logo plus.png' %}" style="width:60pt; height:60pt; margin-left:10pt; margin-top:10pt">
+
+               <h5 style="margin-top:-60pt; margin-left: 90pt">This is to inform the students of the web development programme
+                   <a href="{% url 'read' %}" style="color:#2fc5da">... Read More</a></h5>
+</div></div>
+
+    <div class="container" style="background-color:#ccc; width:300pt; height:130pt; margin-left:315pt; margin-top:-130pt">
+    <div>
+     <h3 style="color:green">2020 Graduation Celebration</h3>
+
+            <img src="{% static 'img/logo plus.png' %}" style="width:60pt; height:60pt; margin-left:10pt; margin-top:10pt">
+               <h5 style="margin-top:-60pt; margin-left: 90pt">This is to inform the general public of the graduation celebration of Wholphinpl
+                   <a href="{% url 'rea' %}" style="color:#2fc5da">... Read More</a></h5>
+           </div></div>
+
+           <div class="container" style="background-color:#ccc; width:300pt; height:130pt; margin-left:10pt; margin-top:5pt">
+    <div>
+     <h3 style="color:green">A call for Professional Ag...</h3>
+
+            <img src="{% static 'img/logo plus.png' %}" style="width:60pt; height:60pt; margin-left:10pt; margin-top:10pt">
+               <h5 style="margin-top:-60pt; margin-left: 90pt">This is to inform the general public of Wholphinplus need for professional
+                   <a href="{% url 'read1' %}" style="color:#2fc5da">... Read More</a></h5>
+           </div></div>
+
+
+        <div class="container" style="background-color:#ccc; width:250pt; height:220pt; margin-right:30pt; margin-top:-265pt">
+     <center><h3 style="color:green">Upcoming Event</h3></center>
+           <img src="{% static 'img/logo plus.png' %}" style="width:60pt; height:60pt; margin-left:10pt; margin-top:10pt">
+               <h5 style="margin-top:-60pt; margin-left: 90pt">web developers defence/graduation ceremony
+
+                   <a href="{% url 'event' %}" style="color:#2fc5da">... Read More</a></h5>
+           </div>
+   <p><center><a href="{% url 'news' %}" class="btn  btn-success"> Read All News/Events</a> </center>
+   </div>
+    <div>
+</div>
+
+<div class="navbar navbar-expand" style="background-color:#28a745ab; margin-top:-25pt">
+    <div class="jumbotron" style="display:flex; margin-left:150pt">
+
+         <div><h2 class="text-center">Services</h2>
+
+        <div class="container" style="background-color:white; width:230pt; height:220pt">
+<h5><i class="fas fa-angle-right"></i><i> Website/App Development</i></h5>
+
+
+             <div class="nav-item dropdown" style="margin-top:-35px; margin-left:188pt">
+                 <a class="nav-link dropdown-toggle active" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" ></a>
+              <div class="dropdown-menu" aria-labelledby="dropdown04" style="background-color:#bbb1b1">
+                 <div class="dropdown" style=" color:black"><center><h6><i>
+                  professional website<br>
+                     cooperate website<br>
+                     e-commernce website<br>
+                     company website<br>
+                     personal website<br>
+                     blog website<br>
+                     sales pages<br>
+                     training
+                  </i></h6></center></div>
+              </div>
+            </div>
+
+      <h5><i class="fas fa-angle-right"></i><i> Writing of Projects and Research</i></h5>
+                  <h5><i class="fas fa-angle-right"></i><i> Graphics Design</i></h5>
+                  <h5><i class="fas fa-angle-right"></i><i> Training on all Programmes</i></h5>
+                  <h5><i class="fas fa-angle-right"></i><i> Word Processing</i></h5>
+                  <h5><i class="fas fa-angle-right"></i><i> Printing and Photocopying</i></h5>
+                  <h5><i class="fas fa-angle-right"></i><i> Online Tutorial</i></h5>
+                  <h5><i class="fas fa-angle-right"></i><i> Web Hosting</i></h5>
+
+        </div>
+             </div>
+
+<div style="margin-left:10pt">
+          <div><h2 class="text-center">Quick Links</h2>
+        <div class="container" style="background-color:white; width:230pt; height:220pt">
+            <h5><i class="fas fa-angle-right"></i><a href="{% url 'quick:enrol' %}"> Enrol for Training</a></h5>
+            <h5><i class="fas fa-angle-right"></i><a href="{% url 'quick:print' %}"> View Enrollment Form</a></h5>
+            <h5><i class="fas fa-angle-right"></i><a href="http//anietiewholphportal.herokuapp.com"> Check Result</a></h5>
+            <h5><i class="fas fa-angle-right"></i><a href="{% url 'quick:pay' %}"> Make Payment</a></h5>
+            <h5><i class="fas fa-angle-right"></i><a href="{% url 'quick:complaint' %}">File a Complaint</a></h5>
+              <h5><i class="fas fa-angle-right"></i><a href="{% url 'met:com' %}"> Drop a Comment</a></h5></div>
+    </div>
+
+    </div>
+
+        <div style="margin-left:100pt">
+           <div><h2 class="text-center" style="margin-top:10pt">Contact Information</h2><br>
+
+              <div>
+                  <p><h5><i class="fas fa-location-arrow"></i> <i>#10 Amaka street, Use, off Nwaniba, Uyo</i></h5>
+               <p><h5><i class="fas fa-at"></i><i> wholphinplus@gmail.com</i></h5>
+              <p><h5><i class="fas fa-phone"></i> <i>08066078147, 08182853816</i></h5>
+                <p> <h5><i class="fab fa-facebook"></i> <a href="https://m.facebook.com/anietie.robert?refid=7">Anietie Robert</a></h5>
+                  </div><hr>
+</div>
+</div>
+    </div>
+
+
+</div>
+
+
+
+
+
+    <p><center style="color:green">
+						  Copyright &copy;<script>document.write(new Date().getFullYear());</script> Wholphinplus Coperation.
+      All rights reserved | Designed by PYCT/WD2020/004</center>
+
+
+
+   <script src="{% static 'js/jquery.min.js' %}"></script>
+  <script src="{% static 'js/bootstrap.min.js' %}"></script>
+  <script src="{% static 'icon-font/js/all.js' %}"></script>
+
+
+
+  </body>
+</html>

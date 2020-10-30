@@ -1,0 +1,25 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>about</title>
+
+</head>
+<body bgcolor="violet">
+{% include 'navbar.html' %}
+<div class="container" style="display:flex">
+<center>
+    <p><h3>Wholphinplus is
+ a computer software where a million dream turned a reality.
+                            Professional attributes in Wholphinplus includes collaborative leadership, skilled operational management,
+                                engagement with diverse groups and implementation of problem solution.
+    we are located at #5 Mbaka street, Use, off Nwaniba, Uyo.</h3><br>
+
+    <h3><i>Please refer to <a href="{% url 'met:con' %}">Contact</a>  for more information on our product and services</i></h3>
+<br>
+<a href="{% url 'main' %}" class="btn btn-success" style="display:flex; justify-content:flex-end">Back</a>
+</center>
+</div>
+</body>
+</html>

@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+   <p>Choose your form to print</p>
+{% for c in end %}
+{{ c.name }}
+   <a href="{% url 'quick:enddetail' c.pk %}">more</a>
+{% endfor %}
+</body>
+</html>

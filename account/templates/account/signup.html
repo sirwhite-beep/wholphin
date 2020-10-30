@@ -1,0 +1,31 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{% include 'navbar.html' %}
+<div class="container">
+    <div class="jumbotron" style="display:flex; justify-content:center">
+
+<form METHOD="POST">
+    {% csrf_token %}
+    <center>
+    {{con.Surname.label_tag}}{{con.Surname|linebreaks}}
+        {{con.Other_names.label_tag}}{{con.Other_names|linebreaks}}
+
+        {{con.Username.label_tag}}{{con.Username|linebreaks}}
+
+        {{con.phone_number.label_tag}}{{con.phone_number|linebreaks}}
+        {{con.Email.label_tag}}{{con.Email|linebreaks}}
+        {{con.Password.label_tag}}{{con.Password|linebreaks}}
+        {{con.Confirm_password.label_tag}}{{con.Confirm_password|linebreaks}}
+    <input type="submit" value="signup" class="btn btn-success">
+        </center>
+</form>
+    </div>
+</div>
+</body>
+</html>
